@@ -4,7 +4,7 @@ function App() {
   const [counter, setValue] = useState(0);
   const [keyword, setKeyword] = useState("");
   const onClick = () => setValue((prev) => prev + 1);
-  const onChange = () => setKeyword(event.target.value);
+  const onChange = (event) => setKeyword(event.target.value);
   console.log("난 항상 실행중!");
   useEffect(() => {
     console.log("1번만 실행");
